@@ -20,7 +20,7 @@ First, create `index.html`, which will be your main entry point in the applicati
 
 Then, create `index.js` :
 ```javascript
-// We associate the component variable to the MyComponent, by passing the absolute path.
+// We associate the 'component' variable to the MyComponent, by passing the absolute path.
 this.component = Kiss.component('./MyComponent');
 ```
 
@@ -31,8 +31,10 @@ Now, we can make our HTML part of the component `MyComponent.html`:
 
 And its Javascript counterpart `MyComponent.js`:
 ```javscript
-// We can associate the foo variable to a string.
+// We can associate the 'foo' variable to a string.
 this.foo = 'Hello world!';
+// And 'this' contains the reference to DOM component.
+this.style.color = 'red';
 ```
 
 Et voilà! This is super simple!
