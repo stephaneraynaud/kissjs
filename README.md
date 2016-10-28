@@ -48,14 +48,19 @@ Sometimes you will need to do loops. Here is how to:
 this.components = [];
 
 for(var i = 0; i <= 10; i++) {
-    this.components.push(Kiss.component('./MyComponent');
+    this.components.push(Kiss.component('./MyComponent'));
 }
 ```
 
-## Update view
-When you need to update your view, just:
+## Update component
+When you need to update your component, just:
 ```javascript
 this.update();
+```
+or
+```javascript
+this.component = Kiss.component('./MyComponent');
+this.component.update();
 ```
 
 ## References inside templates
