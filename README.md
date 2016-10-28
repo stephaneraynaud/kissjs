@@ -52,6 +52,12 @@ for(var i = 0; i <= 10; i++) {
 }
 ```
 
+## Update view
+When you need to update your view, just:
+```javascript
+this.update();
+```
+
 ## References inside templates
 You can also get reference of HTML elements inside templates:
 ```html
