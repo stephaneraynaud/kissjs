@@ -67,3 +67,18 @@ userService.dispatchEvent(new Event('my-event'));
 var userService = Kiss.singleton('./UserService');
 userService.addEventListener('my-event', ... );
 ```
+
+## Styling
+Styling is currently made inside templates as follow:
+```html
+<h1>Title</h1>
+
+<style scoped>
+MyComponent > h1 {
+  color: red;
+}
+</style>
+```
+
+## Compile in one single file
+Erhm, sorry, this is not available yet but it is totally under considération.
