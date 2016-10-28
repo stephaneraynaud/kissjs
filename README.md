@@ -1,4 +1,4 @@
-# KISS
+# KISS.js
 Keep It Super Simple - Minimalist Javascript Framework
 
 # Why?
@@ -30,7 +30,7 @@ Now, we can make our HTML part of the component `MyComponent.html`:
 ```
 
 And its Javascript counterpart `MyComponent.js`:
-```javscript
+```javascript
 // We can associate the 'foo' variable to a string.
 this.foo = 'Hello world!';
 // And 'this' contains the reference to DOM component.
@@ -38,6 +38,19 @@ this.style.color = 'red';
 ```
 
 Et voilà! This is super simple!
+
+## Lists
+Sometimes you will need to do loops. Here is how to:
+```html
+{{components}}
+```
+```javascript
+this.components = [];
+
+for(var i = 0; i <= 10; i++) {
+    this.components.push(Kiss.component('./MyComponent');
+}
+```
 
 ## References inside templates
 You can also get reference of HTML elements inside templates:
